@@ -1,1 +1,39 @@
-<p>tickets works!</p>
+<h1 class="header">
+  Available tickets
+</h1>
+<div class="menu search">
+  <input matInput placeholder="Поиск..">
+  <button>Search</button>
+</div>
+<div class="menu">
+  <div class="menu-item">
+    <mat-label for="sort">
+      Сортировка
+    </mat-label>
+    <mat-select id="sort">
+      <mat-option value="Новые">Новые</mat-option>
+      <mat-option value="Популярные">Популярные</mat-option>
+    </mat-select>
+  </div>
+  <div class="menu-item">
+    <mat-label for="cost">
+      Цена
+    </mat-label>
+    <mat-select id="cost">
+      <mat-option value="Дешевые">Сначало дешевые</mat-option>
+      <mat-option value="Дорогие">Сначало дорогие</mat-option>
+    </mat-select>
+  </div>
+</div>
+<div class="tickets">
+  <table class="tickets product">
+    <tr>
+      <th>Title</th>
+      <th>Place</th>
+      <th>Покупок</th>
+      <th>Цена</th>
+      <th>     </th>
+    </tr>
+    <!-- rendering tickets -->
+  </table>
+</div>

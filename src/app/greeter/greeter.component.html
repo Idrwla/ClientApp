@@ -1,1 +1,12 @@
-<p>greeter works!</p>
+<app-covid *ngIf="!covid" (clicked)="hideChild($event)"></app-covid>
+<div class="content">
+  <div class="travel-illustration">
+    <img class="illustration-img" src="assets/travel%20illustration%20hand%20drawn%20travel_3820444.png">
+  </div>
+  <div class="travel-text">
+    <h2>"Забирай только воспоминания, оставляй только следы"</h2><br>
+    <span class="author">Чиф Сиэтл</span>
+  </div>
+</div>
+
+

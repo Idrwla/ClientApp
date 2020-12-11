@@ -1,0 +1,29 @@
+<h1>Заявка на партнерство</h1>
+<div>
+  <p>Став партнером вы сможете размешать собственные билеты</p>
+  <p>Ваш пароль и имя пользователем будем имя пользователя от сайта</p>
+  <p>Вам требуется заполнить все поля</p>
+  <form [formGroup] ="partnerForm">
+    <mat-form-field>
+      <mat-label>
+        Наименование организации
+      </mat-label>
+      <input matInput formControlName="name">
+    </mat-form-field><br>
+    <mat-form-field>
+      <mat-label>
+        БИН
+      </mat-label>
+      <input matInput formControlName="BIN">
+    </mat-form-field><br>
+    <mat-form-field>
+      <mat-label>
+        Описании организации
+      </mat-label>
+      <input matInput formControlName="description">
+    </mat-form-field><br>
+
+
+
+  </form>
+</div>

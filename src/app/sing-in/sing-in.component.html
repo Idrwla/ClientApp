@@ -1,1 +1,21 @@
-<p>sing-in works!</p>
+<h1>
+  Авторизация пользователя
+</h1>
+<div class="content">
+  <form [formGroup]="userForm" >
+    <mat-form-field>
+      <mat-label>E-mail</mat-label>
+      <input type="email" matInput formControlName="email">
+    </mat-form-field><br>
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input type="password" matInput formControlName="password">
+    </mat-form-field>
+    <br>
+    <button mat-button type="submit">Sing in</button>
+  </form>
+  <div class="g-signin2 google-btn" data-onsuccess="onSignIn"></div>
+</div>
+<div>
+  Если еще не зарегистрированы то пожалейста <button id="toSingUp" mat-button appBackButton appToPage="singUp">зарегистрирейтесть</button>.
+</div>

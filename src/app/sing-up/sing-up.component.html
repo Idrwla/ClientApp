@@ -1,1 +1,48 @@
-<p>sing-up works!</p>
+
+<button mat-button appBackButton appToPage="singIn" class="back">
+  <img src="assets/icons8-back-48.png">
+</button>
+<h1>
+  Регистрация
+</h1>
+<div class="content">
+  <form [formGroup]="userForm">
+    <mat-form-field>
+      <mat-label>
+        First name
+      </mat-label>
+      <input matInput formControlName="firstName">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-label>
+        Last name
+      </mat-label>
+      <input matInput formControlName="lastName">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-label>
+        E-mail
+      </mat-label>
+      <input matInput formControlName="email">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-label>
+        Password
+      </mat-label>
+      <input matInput type="password" formControlName="password">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-label>
+        Confirm your password
+      </mat-label>
+      <input matInput type="password" formControlName="confPassword">
+    </mat-form-field>
+    <br>
+    <button mat-button >Sing up</button>
+  </form>
+
+</div>

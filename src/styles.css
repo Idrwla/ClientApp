@@ -1,4 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  background-image: url("./assets/10.jpg");
+}
+.mat-typography{
+  font-family: 'Raleway', sans-serif;
+}

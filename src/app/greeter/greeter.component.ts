@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./greeter.component.css']
 })
 export class GreeterComponent implements OnInit {
-
+  covid = false;
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  hideChild(event): void{
+    this.covid = event;
+  }
 }
