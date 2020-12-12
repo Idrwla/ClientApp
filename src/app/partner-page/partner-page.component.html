@@ -13,34 +13,31 @@
 </div>
 <div>
   <p>Добавить билет</p>
-  <form>
+  <form [formGroup]="ticketForm" >
     <mat-form-field>
       <mat-label>
         Title
       </mat-label>
-      <input matInput>
+      <input matInput formControlName="title">
     </mat-form-field> <br>
     <mat-form-field>
       <mat-label>
         Description
       </mat-label>
-      <input matInput>
+      <input matInput formControlName="desc">
     </mat-form-field> <br>
     <mat-form-field>
       <mat-label>
         Date
       </mat-label>
-      <input matInput type="date">
+      <input matInput type="date" formControlName="data">
     </mat-form-field> <br>
     <mat-form-field>
       <mat-label>
-        Title
+        Cost
       </mat-label>
-      <mat-select>
-        <mat-option *ngFor="let city of citys">
-          {{city}}
-        </mat-option>
-      </mat-select>
+      <input matInput  formControlName="cost">
     </mat-form-field> <br>
+    <button mat-button type="submit" [disabled]="ticketForm.invalid" (click)="send()">Добавить</button>
   </form>
 </div>

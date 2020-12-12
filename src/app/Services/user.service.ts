@@ -19,9 +19,7 @@ export class UserService {
     return this.user;
   }
   userPost(user: User): Observable<User>{
-    const fromServer$ =  this.http.post<User>(userUrl, user).pipe(catchError(
-      this.errorHandler.handleError
-    ));
+    const fromServer$ =  this.http.post<User>(userUrl, user);
     fromServer$.subscribe((data) => {
       this.user = data;
       this.loggedIn = true;

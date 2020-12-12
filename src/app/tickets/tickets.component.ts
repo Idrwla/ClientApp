@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Ticket} from '../Shared/Ticket';
+import {TicketService} from '../Services/ticket.service';
 
 @Component({
   selector: 'app-tickets',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tickets.component.css']
 })
 export class TicketsComponent implements OnInit {
-
-  constructor() { }
+  tickets: Ticket[];
+  constructor(private ticketService: TicketService) { }
 
   ngOnInit(): void {
+    this.ticketService.getTickets().subscribe( (data) => {
+      this.tickets = data;
+    });
   }
-
 }

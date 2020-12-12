@@ -29,11 +29,20 @@
   <table class="tickets product">
     <tr>
       <th>Title</th>
-      <th>Place</th>
-      <th>Покупок</th>
+      <th>Описание</th>
       <th>Цена</th>
-      <th>     </th>
     </tr>
-    <!-- rendering tickets -->
+    <tr *ngFor="let tic of tickets">
+      <td>
+        {{tic.tittle}}
+      </td>
+      <td>
+        {{tic.description}}
+      </td>
+      <td>
+        {{tic.cost}}
+      </td>
+
+    </tr>
   </table>
 </div>
