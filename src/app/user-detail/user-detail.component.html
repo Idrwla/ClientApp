@@ -1,4 +1,17 @@
 <h1>My page</h1>
-<div *ngIf="user">
-  <p>{{user.firstname}} {{user.lastname}}</p>
+<div>
+  <mat-card>
+    <mat-card-title>
+      {{user.firstName}} {{user.lastName}}
+    </mat-card-title>
+    <mat-card-subtitle>
+      {{user.email}}
+    </mat-card-subtitle>
+    <mat-card-content>
+      <!-- user inf -->
+    </mat-card-content>
+    <mat-action-list>
+      <button mat-button (click)="logOut()">Log Out</button>
+    </mat-action-list>
+  </mat-card>
 </div>

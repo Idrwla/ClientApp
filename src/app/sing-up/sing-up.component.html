@@ -6,7 +6,7 @@
   Регистрация
 </h1>
 <div class="content">
-  <form [formGroup]="userForm">
+  <form [formGroup]="userForm" method="post">
     <mat-form-field>
       <mat-label>
         First name
@@ -42,7 +42,7 @@
       <input matInput type="password" formControlName="confPassword">
     </mat-form-field>
     <br>
-    <button mat-button >Sing up</button>
+    <button mat-button (click)="singUp()" [disabled]="userForm.invalid">Sing up</button>
   </form>
 
 </div>

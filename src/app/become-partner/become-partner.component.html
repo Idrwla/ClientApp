@@ -1,7 +1,11 @@
+<button mat-button appBackButton appToPage="" class="back">
+  <img src="assets/icons8-back-48.png">
+</button>
+
 <h1>Заявка на партнерство</h1>
-<div>
+<div class="content">
   <p>Став партнером вы сможете размешать собственные билеты</p>
-  <p>Ваш пароль и имя пользователем будем имя пользователя от сайта</p>
+  <p>Вашим паролем и именим пользователя будет имя пользователя от сайта</p>
   <p>Вам требуется заполнить все поля</p>
   <form [formGroup] ="partnerForm">
     <mat-form-field>
@@ -22,7 +26,7 @@
       </mat-label>
       <input matInput formControlName="description">
     </mat-form-field><br>
-
+  <button mat-button (click)="become()"> Падать заявку</button>
 
 
   </form>

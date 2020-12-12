@@ -24,6 +24,10 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 import {BackButtonDirective} from './Directives/back-button.directive';
 import {MatTabsModule} from '@angular/material/tabs';
+import {HttpClientModule} from '@angular/common/http';
+import { ErrorComponent } from './error/error.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -41,7 +45,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     BecomePartnerComponent,
     AboutUsComponent,
     CovidComponent,
-    BackButtonDirective
+    BackButtonDirective,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +58,10 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatInputModule,
     ReactiveFormsModule,
     MatButtonModule,
-    MatTabsModule
+    MatTabsModule,
+    HttpClientModule,
+    MatCardModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

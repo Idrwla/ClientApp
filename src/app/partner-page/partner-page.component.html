@@ -1,1 +1,46 @@
-<p>partner-page works!</p>
+
+<button mat-button appBackButton appToPage="" class="back">
+  <img src="assets/icons8-back-48.png" alt="back">
+</button>
+<h1>
+  Страница партнера
+</h1>
+<div>
+  <div>
+    <p>Организация: {{partner.name}}</p>
+    <p *ngIf="bank">Ваши средства: {{bank.karta}}</p>
+  </div>
+</div>
+<div>
+  <p>Добавить билет</p>
+  <form>
+    <mat-form-field>
+      <mat-label>
+        Title
+      </mat-label>
+      <input matInput>
+    </mat-form-field> <br>
+    <mat-form-field>
+      <mat-label>
+        Description
+      </mat-label>
+      <input matInput>
+    </mat-form-field> <br>
+    <mat-form-field>
+      <mat-label>
+        Date
+      </mat-label>
+      <input matInput type="date">
+    </mat-form-field> <br>
+    <mat-form-field>
+      <mat-label>
+        Title
+      </mat-label>
+      <mat-select>
+        <mat-option *ngFor="let city of citys">
+          {{city}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field> <br>
+  </form>
+</div>

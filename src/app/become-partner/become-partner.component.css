@@ -1,0 +1,32 @@
+div.content{
+  border: 2px solid white;
+  width: 100%;
+  background-color: rgba(255,255,255,0.5);
+  padding: 20px;
+  text-align: center;
+}
+form{
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px 20px 20px 35%;
+}
+button{
+  right: 30%;
+  background-color: rgba(255,255,255,1);
+}
+mat-form-field{
+  width: 50%;
+  right: 30%;
+}
+h1{
+  text-align: center;
+  display: inline;
+  margin-left: 0;
+  margin-bottom: 100px;
+}
+button.back{
+  margin-left: 30%;
+  border: none;
+  background: none;
+}
